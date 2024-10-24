@@ -1,0 +1,13 @@
+.ne-hero{
+    /* background-color: red; */
+    height: 80vh;
+    /* margin-top: 63px; */
+}
+.carousel-item img{
+    width: 100% !important;
+    height: 100vh;
+    object-fit: cover;
+}
+.carousel-control-next-icon ,.carousel-control-prev-icon{
+    display: none;
+}

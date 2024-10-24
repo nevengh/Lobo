@@ -1,0 +1,7 @@
+.navbar{
+    z-index: 999;
+}
+.navbar a{
+    font-size: 22px;
+    margin-left: 10px;
+}

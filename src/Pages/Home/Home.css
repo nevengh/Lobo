@@ -1,0 +1,76 @@
+.featured-collection{
+     margin-top: 170px;
+}
+.featured-title{
+    text-align: center;
+    font-family: var(--text-font);
+}
+.featured-container{
+    width: 95%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.all-producr-btn-con{
+    /* width:200px; */
+    height: 44px;
+    margin: 30px auto;
+    text-align: center;
+}
+.All-product {
+    padding: 10px 40px;
+    background-color: #000000;
+    color: #fff;
+    font-family: var(--text-font);
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1; /* Ensure the text stays above the background */
+    text-decoration: none;
+    transition: color 0.5s ease-in-out; /* Smooth text color transition */
+}
+
+.All-product {
+    padding: 10px 40px;
+    background-color: #000;
+    color: #fff;
+    font-family: var(--text-font);
+    border: none;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.5s ease-in-out; /* Smooth text color transition */
+    z-index: 1; /* Ensure text stays on top initially */
+}
+
+.All-product::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    
+    z-index: -1; /* Ensure the background stays behind the text */
+    transition: left 0.5s ease-in-out; /* Smooth background slide-in */
+}
+
+.All-product:hover::before {
+    
+    left: 0; /* Slide in the white background */
+}
+
+.All-product:hover {
+    border: 1px solid #000;
+    color: #000 !important; /* Change text color to black when hovered */
+    z-index: 3; /* Ensure text is above the background */
+}
+
+
+/* Product */
+.product-card{
+    width: 430px;
+}
